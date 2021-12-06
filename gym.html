@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+             Fitness GYM
+        </title>
+    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*css reset*/
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('bg.jpg') ;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        .left{
+
+           /* border: 2px solid red; */
+            display: inline-block;
+            display: inline-block;
+            position:absolute;
+            left:34px;
+            top:20px
+        }
+        .left img{
+            width: 100px;
+            filter: invert(100%);
+
+        }
+        .left div{
+            text-align: center;
+           
+        }
+        .mid{
+            display: block;
+            width:33%;
+            margin:29px auto;
+            /*border: 2px solid green;*/
+        }
+        .right{
+           /* border:2px solid yellow;*/
+            display: inline-block;
+            position:absolute;
+            right:34px;
+            top:43px;
+        
+
+        }
+        .btn{
+            margin:0px 9px;
+            color: white;
+            background-color: black;
+            padding: 8px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size:20px;
+            cursor:pointer;
+
+        }
+        .btn:hover{
+            background-color:grey        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            font-size: 20px;
+            display: inline-block;
+        }
+        .navbar li a{
+            
+            color: white;
+            text-decoration: none;
+            padding: 34px 14px;
+        }
+        .navbar li a:hover, .navbar li a:active{
+            
+          
+            text-decoration: underline;
+            color: grey;
+          
+        }
+        .container{
+            border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+        }
+        .form-group input {
+         font-family: 'Balsamiq Sans', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;}
+
+        .container h1 {
+        text-align: center;
+        }
+     .container button {
+        display: block;
+        width: 44%;
+        margin: 20px auto;
+    }
+    .form-group p {
+        text-align: center;
+    }
+
+    
+    </style>
+    <body>
+        <header class="header">
+            <div class="left">
+           
+<!--left box for logo-->
+                <img src="bg2.jpeg" alt="">
+                <div> Fitness Gym</div>
+            </div>
+            <div class="mid">
+<!--for nav bar-->
+                        <ul class="navbar"> 
+                           <li> <a href="#" class="active">Home</a> </li>
+                           <li> <a href="#">AboutUs</a></li>
+                           <li> <a href="#">Fitness Calculator</a> </li>
+                           <li>  <a href="#">ContactUs</a> </li>
+                    </ul>
+            </div>
+            <div class="right">
+<!--buttons-->
+                        <butoon class="btn">Call Us Now</butoon>
+                        <butoon class="btn">E-mail Us</butoon>
+            </div>
+        </header>
+        <div class="container">
+        <h1>JOIN THE BEST GYM OF AHMEDABAD</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                First Name:
+                <input type="text" placeholder="First Name">
+                Last Name:
+                <input type="text" placeholder="Last Name">
+                Phone number: <input type="tel" placeholder="Phonenumber">
+                E-mail Id: <input type="email" placeholder="E-mail Id">
+                Gender: <input type="text" placeholder="Gender"
+                Registration Date: <input type="date"><br>
+             <input type="checkbox"><p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                
+             <button class="btn" onclick="alert('Registered!!')">Register</button>
+        <button type="reset" class="btn">Reset</button>
+
+  
+  
+  </div>
+
+            </div>
+        </form>
+    </div>
+    </body>
+</html>
